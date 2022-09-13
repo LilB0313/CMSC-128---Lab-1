@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Agahay Guesthouse Resort - Booking</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="OverAllStyle.css" type="text/css">
+    <link rel="stylesheet" href="Booking.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="images file\Logo.jpg">
+      </div>
+      <span>Agahay Guesthouse Resort</span>
+
+      <!-- navigation -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'><u style="color: black;">Booking</u></a></li>
+          <li><a href='#'>Amenities</a></li>
+          <li><a href='#'>About Us</a></li>
+          <button id="btn1" class="button">Book Now</button>
+        </ul>
+      </nav>
+      <!-- end of navigation -->
+
+    </header>
+    <!-- end of header -->
+
+    <!-- fixed background -->
+    <div id="slider">
+      <ul id="slideWrap">                                                       <!-- an automated background slider -->
+        <li><img src="images file\cover1.jpg" alt=""></li>
+        <li><img src="images file\img 21.jpg" alt=""></li>
+        <li><img src="images file\img 3.jpg" alt=""></li>
+        <li><img src="images file\img 15.jpg" alt=""></li>
+        <li><img src="images file\img 23.jpg" alt=""></li>
+      </ul>
+
+      <a id="prev" class="prev">&#10094;</a>                                    <!-- navigation arrows -->
+      <a id="next" class="next">&#10095;</a>
+    </div>
+    <!-- end of cover picture -->
+
+    <!-- the form that contains the info of the guesthouse -->
+    <div class="container">
+
+      <!-- contained features for booking search, and reservation edits -->
+      <div class="container-time">
+        <form action="http://localhost/lab1/BookingList.php" method="post">  <!-- gets the dates to check for bookings -->
+          <h1>Search for Vacancy</h1>
+          <hr>
+          <div class="form-field">
+            <p>From</p>
+            <input type="date" name="from_date">
+          </div>
+          <div class="form-field">
+            <p>To</p>
+            <input type="date" name="to_date">
+          </div>
+          <button type="submit" name="is_vacant">Search</button>
+        </form>
+        <br><br>
+        <form action="http://localhost/lab1/editDetails.php" method="post">  <!-- gets id to edit cust_details -->
+          <h1>Edit Stay Detail</h1>
+          <hr>
+          <div class="form-field">
+            <p>Custumer ID</p>
+            <input type="id" placeholder="Enter ID" name="ID">
+          </div>
+          <button type="submit" name="verify">Verify</button>
+        </form>
+      </div>
+
+      <!-- an informative panel -->
+      <div class="container-form">                                              <!-- display the features -->
+        <section class="features">
+          <h1>The Search Feature</h1>
+          <p>This allows you, users, to search for the availability in bookings.</p>
+          <p>The search engine will display the dates that are already booked.</p>
+          <p>Be advised that the details for each booking is strictly confidencial.</p>
+          <p>Only the date and stay type for each reservation will be displayed.</p><br>
+          <h1>The Edit Feature</h1>
+          <p>This allows the users to create changes to their reservations.</p>
+          <p>The system will first verify if you have indeed booked your stay at Agahay Gueshouse Resort.</p>
+          <p>Once verified, a form will be displayed containing your previous data entry.</p>
+          <p>Only the Customer reservation details is editable.</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- the footer -->
+    <footer class="contactus" style="top: 200px;">
+      <h2>Contact Us</h2>
+      <!-- links and resort info -->
+      <ul>
+        <a href="http://fb.com/agahayguesthouse">
+          <img src="images file\icon 1.png">
+        </a>
+        <li><a href='http://fb.com/agahayguesthouse'>http://fb.com/agahayguesthouse</a></li>
+        <img src="images file\icon 2.png">
+        <li>09988848418</li>
+        <img src="images file\icon 3.jpg">
+        <li>renzad@yahoo.com</li>
+      </ul>
+
+      <span><i>© 2022 by Agahay Guesthouse</i></span>
+    </footer>
+    <!-- end of footer-->
+    <script src="btn.js" type="text/javascript"></script>
+    <script src="slider.js" type="text/javascript"></script>
+  </body>
+</html>

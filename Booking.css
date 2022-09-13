@@ -1,0 +1,103 @@
+/* how the slider was designed */
+#slider {
+    width: 100%;
+    height: 650px;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* design for each unordered list */
+#slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+}
+
+/* desogn for the list items */
+#slider ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+/* design for the images */
+#slider ul li img{
+    width: 1349px;
+    height: 650px;
+}
+
+/* size of the container or the form */
+.container {
+    position: relative;
+    top: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: rgba(80, 200, 230, 0.75);
+    align-items: center;
+}
+
+/* for the time detail design */
+.container-time {
+    background-color: rgba(0, 0, 50, 0.2);
+    padding: 50px;
+    outline: 3px dashed #0000FF;
+    outline-offset: -30px;
+    text-align: center;
+}
+
+/* header designs */
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    padding-top: 5%;
+    color: #FFFFF0;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/* design for the customer's detail form */
+.container-form {
+    margin: 0% 20%;
+    color: #000;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+form p {
+    font-weight: 1000;
+    text-align: left;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, .expand {
+    padding: 10px 15px;
+    border: none;
+    width: 50%;
+}
+
+label {
+    font-size: 18px;
+    text-indent: 1mm;
+    justify-content: space-around;
+}

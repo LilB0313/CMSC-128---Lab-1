@@ -1,0 +1,278 @@
+/* overall design of the website */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Berlin Sans FB;
+}
+
+/* set designs for the html and body */
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* details for the body */
+body {
+    font-stretch: condensed;
+    font-size: 21px;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+/* overall design for the buttons */
+button, .btn {
+    background-color: #00bdec;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    height: 48px;
+    font-family: Berlin Sans FB;
+    font-size: 21px;
+    border: 1px solid #transparent;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+/* design when they are howered */
+button:hover, .btn:hover {
+    transform: scale(1.03);
+    background-color: #fff;
+    color: #00bdec;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .5);
+}
+
+/* design for the header */
+header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    background: #FFFFF0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+    padding-top: 40px;
+    border-bottom: 3px solid;
+    width: 300px;
+    align-items: center;
+    margin-left: 100px;
+    text-align: center;
+}
+
+/* for the website name */
+span {
+    margin-left: 30px;
+}
+
+/* the logo design */
+.logo {
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+/* for its image */
+.logo img {
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* for the links */
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-right: 50px;
+}
+
+/* for the list */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 2%;
+    white-space: nowrap;
+}
+
+/* for the anchor */
+.nav-links ul li a {
+    color: #000000;
+    text-decoration: inherit;
+    border: 1px solid #transparent;
+    transition: 0.6s ease;
+}
+
+/* what to do when they are howered */
+.nav-links ul li a:hover {
+    color: #00bdec;
+}
+
+/* overall design for the contact information */
+.contactus {
+    background-color: #FFFFF0;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contactus li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contactus a {
+    color: #000000;
+    text-decoration: inherit;
+    text-align: center;
+}
+
+.contactus img {
+    position: sticky;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.contactus img:hover {
+    transform: scale(2.0);
+    cursor: pointer;
+}
+
+/* executes when the website size if less than 800px */
+@media screen and (max-width: 800px) {
+  /* mostly change in font size, padding, and margin */
+
+  body {
+    font-size: 2.5vw;
+  }
+
+  button {
+      border-radius: 2.0vw;
+      padding: 1vw;
+      height: 4.8vw;
+      font-family: Berlin Sans FB;
+      font-size: 2.1vw;
+      border: 1px solid #transparent;
+      transition: 0.6s ease;
+      cursor: pointer;
+  }
+
+  button:hover {
+      transform: scale(1.03);
+      background-color: #fff;
+      color: #00bdec;
+      box-shadow: 0.7vw 1vw 1.2vw rgba(0, 0, 0, .5);
+  }
+
+  header {
+      width: 100%;
+      margin: 0 auto;
+      position: fixed;
+      display: flex;
+      z-index: 1;
+      padding-top: 0.5vw;
+      padding-bottom: 0.5vw;
+      align-items: center;
+      background: #FFFFF0;
+  }
+
+  h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.3vw;
+      font-size: 3.0vw;
+      padding-top: 4.0vw;
+      border-bottom: 0.3vw solid;
+      width: 30.0vw;
+      align-items: center;
+      margin-left: 10.0vw;
+      text-align: center;
+  }
+
+  span {
+      margin-left: 3.0vw;
+  }
+
+  .logo {
+      position: sticky;
+      width: 8.0vw;
+      height: 8.0vw;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: 5.0vw;
+  }
+
+  .logo img {
+      margin-left: auto;
+      width: 8.0vw;
+      height: 8.0vw;
+  }
+
+  .nav-links {
+      flex: 1;
+      text-align: right;
+      margin-right: 5.0vw;
+  }
+
+  .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 2%;
+      white-space: nowrap;
+  }
+
+  .nav-links ul li a {
+      color: #000000;
+      text-decoration: inherit;
+      border: 0.1vw solid #transparent;
+      transition: 0.6s ease;
+  }
+
+  .nav-links ul li a:hover {
+      color: #00bdec;
+  }
+
+  .contactus {
+      background-color: #FFFFF0;
+      width: 100%;
+      position: relative;
+      align-items: center;
+      padding-bottom: 5.0vw;
+      text-align: center;
+  }
+
+  .contactus li {
+      display: none;
+  }
+
+  .contactus img {
+      position: sticky;
+      padding-top: 5vw;
+      padding-bottom: 5vw;
+      width: 5.0vw;
+      height: 5.0vw;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: 5.0vw;
+  }
+
+  .contactus img:hover {
+      transform: scale(2.0);
+      cursor: pointer;
+  }
+}
